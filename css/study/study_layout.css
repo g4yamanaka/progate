@@ -1,0 +1,149 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 48px 1fr 1fr 50px;
+  grid-gap: 7px;
+}
+
+.header {
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+
+.procedure {
+  grid-column: 1;
+  grid-row: 2/4;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 42px 1fr;
+}
+
+.procedure__header {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.procedure__body {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.editor {
+  grid-column: 2;
+  grid-row: 2/4;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr 58px;
+}
+
+.editor__header {
+  grid-column: 1;
+  grid-row: 1;
+
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  grid-template-rows: 1fr;
+}
+
+.tab {
+  grid-column: 1;
+  grid-row: 1;
+
+  display: grid;
+  grid-auto-columns: 124px;
+  grid-template-rows: 1fr;
+  grid-gap: 3px;
+}
+
+.tab__file {
+  grid-column: auto;
+  grid-row: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+.tab__file--selected {
+  grid-column: auto;
+  grid-row: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+.editor__setting {
+  grid-column: 2;
+  grid-row: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+.editor__writeable {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.editor__footer {
+  grid-column: 1;
+  grid-row: 3;
+
+  display: grid;
+  grid-template-columns: 1fr 160px;
+  grid-template-rows: 1fr;
+}
+
+.confirm {
+  grid-column: 2;
+  grid-row: 1;
+
+  display: flex;
+}
+
+.consoles {
+  grid-column: 3;
+  grid-row: 2/4;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.console {
+  grid-column: 1;
+  grid-row: auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr;
+}
+
+.console__header {
+  grid-column: 1;
+  grid-row: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+.console__out-screen {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.footer {
+  grid-column: 1/-1;
+  grid-row: 4;
+}
