@@ -58,23 +58,42 @@
           <div class="console__header">
             <i class="console__header-icon fa fa-terminal"></i>
             <p class="console__header-text">コンソール</p>
-            <i class="console__header-btn fa fa-play"></i>
+            <button id="execute">
+              <i class="console__header-btn fa fa-play"> </i>
+            </button>
           </div>
-          <div class="console__out-screen"></div>
+          <div class="console__out-screen">
+            <textarea
+              readonly
+              name=""
+              id="executeText"
+              class="console__content"
+            ></textarea>
+          </div>
         </div>
         <div class="console">
           <div class="console__header">
             <i class="console__header-icon fa fa-terminal"></i>
             <p class="console__header-text">見本</p>
-            <i class="console__header-btn fa fa-play"></i>
+            <button id="showSample">
+              <i class="console__header-btn fa fa-play"></i>
+            </button>
           </div>
-          <div class="console__out-screen"></div>
+          <div class="console__out-screen">
+            <textarea
+              readonly
+              name=""
+              id="sampleText"
+              class="console__content"
+            ></textarea>
+          </div>
         </div>
       </div>
       <div class="footer"></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ext-language_tools.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
       var editor = ace.edit("editor");
       editor.setTheme("ace/theme/monokai");
@@ -83,5 +102,6 @@
       editor.getSession().setUserWrapMode(true);
       editor.getSession().setTabSize(4);
     </script>
+    <script src="js/app.js"></script>
   </body>
 </html>
