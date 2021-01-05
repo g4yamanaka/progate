@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/g4yamanaka/javaq-front#readme",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "jquery": "^3.4.1"
   },
   "devDependencies": {
